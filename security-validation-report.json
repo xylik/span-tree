@@ -1,0 +1,180 @@
+{
+  "extension": "SpanTree",
+  "validationDate": "2025-08-07T11:03:02.508Z",
+  "summary": {
+    "totalTests": 17,
+    "passedTests": 15,
+    "securityScore": 115,
+    "maxScore": 100,
+    "securityLevel": "EXCELLENT"
+  },
+  "validations": [
+    {
+      "category": "PERMISSIONS",
+      "test": "host_permissions_restricted",
+      "passed": true,
+      "score": 15,
+      "description": "Host permissions restricted to necessary domains",
+      "remediation": "Restrict host_permissions to GitLab domains only",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "CONTENT_SCRIPTS",
+      "test": "restricted_matches",
+      "passed": true,
+      "score": 10,
+      "description": "Content scripts limited to specific domains",
+      "remediation": "Restrict content script matches to necessary domains",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "CSP",
+      "test": "policy_defined",
+      "passed": true,
+      "score": 15,
+      "description": "Content Security Policy is defined",
+      "remediation": "Add strict CSP to manifest",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "WEB_RESOURCES",
+      "test": "restricted_access",
+      "passed": true,
+      "score": 8,
+      "description": "Web accessible resources properly restricted",
+      "remediation": "Restrict web accessible resources to necessary domains",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "UTILITIES",
+      "test": "secure_messaging_exists",
+      "passed": true,
+      "score": 8,
+      "description": "Secure messaging utility is available",
+      "remediation": "Implement secure messaging wrapper",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "UTILITIES",
+      "test": "messaging_origin_validation",
+      "passed": true,
+      "score": 5,
+      "description": "Secure messaging includes origin validation",
+      "remediation": "Add origin validation to messaging",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "UTILITIES",
+      "test": "secure_storage_exists",
+      "passed": true,
+      "score": 8,
+      "description": "Secure storage utility is available",
+      "remediation": "Implement secure storage wrapper",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "UTILITIES",
+      "test": "storage_encryption",
+      "passed": true,
+      "score": 7,
+      "description": "Secure storage includes proper encryption",
+      "remediation": "Add encryption to storage utility",
+      "timestamp": "2025-08-07T11:03:02.494Z"
+    },
+    {
+      "category": "CODE_SECURITY",
+      "test": "no_eval_usage",
+      "passed": true,
+      "score": 10,
+      "description": "No dangerous eval() usage detected",
+      "remediation": "Replace eval() with safer alternatives",
+      "timestamp": "2025-08-07T11:03:02.500Z"
+    },
+    {
+      "category": "CODE_SECURITY",
+      "test": "safe_dom_manipulation",
+      "passed": true,
+      "score": 8,
+      "description": "Safe DOM manipulation practices followed",
+      "remediation": "Replace innerHTML with safer methods",
+      "timestamp": "2025-08-07T11:03:02.500Z"
+    },
+    {
+      "category": "CODE_SECURITY",
+      "test": "secure_messaging",
+      "passed": false,
+      "score": 0,
+      "description": "Secure messaging practices followed",
+      "remediation": "Add origin validation to postMessage handlers",
+      "timestamp": "2025-08-07T11:03:02.500Z"
+    },
+    {
+      "category": "DEPENDENCIES",
+      "test": "no_vulnerable_deps",
+      "passed": false,
+      "score": 0,
+      "description": "No known vulnerable dependencies detected",
+      "remediation": "Update vulnerable dependencies to secure versions",
+      "timestamp": "2025-08-07T11:03:02.501Z"
+    },
+    {
+      "category": "DEPENDENCIES",
+      "test": "lockfile_exists",
+      "passed": true,
+      "score": 3,
+      "description": "Package lockfile exists for dependency security",
+      "remediation": "Generate package-lock.json with npm install",
+      "timestamp": "2025-08-07T11:03:02.501Z"
+    },
+    {
+      "category": "DOCUMENTATION",
+      "test": "security_doc_exists",
+      "passed": true,
+      "score": 5,
+      "description": "Security documentation exists",
+      "remediation": "Create comprehensive security documentation",
+      "timestamp": "2025-08-07T11:03:02.501Z"
+    },
+    {
+      "category": "DOCUMENTATION",
+      "test": "vulnerability_reporting",
+      "passed": true,
+      "score": 3,
+      "description": "Vulnerability reporting process documented",
+      "remediation": "Add vulnerability reporting process to documentation",
+      "timestamp": "2025-08-07T11:03:02.501Z"
+    },
+    {
+      "category": "RUNTIME",
+      "test": "secure_messaging_implemented",
+      "passed": true,
+      "score": 5,
+      "description": "Secure messaging is properly implemented",
+      "remediation": "Implement and use secure messaging utilities",
+      "timestamp": "2025-08-07T11:03:02.504Z"
+    },
+    {
+      "category": "RUNTIME",
+      "test": "secure_storage_implemented",
+      "passed": true,
+      "score": 5,
+      "description": "Secure storage is properly implemented",
+      "remediation": "Implement and use secure storage utilities",
+      "timestamp": "2025-08-07T11:03:02.507Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "CODE_SECURITY",
+      "test": "secure_messaging",
+      "priority": 1,
+      "remediation": "Add origin validation to postMessage handlers"
+    },
+    {
+      "category": "DEPENDENCIES",
+      "test": "no_vulnerable_deps",
+      "priority": 1,
+      "remediation": "Update vulnerable dependencies to secure versions"
+    }
+  ]
+}

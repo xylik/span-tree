@@ -7,10 +7,7 @@
     "service_worker": "event.js"
   },
   "host_permissions": [
-    "https://gitlab.com/*",
-    "https://*.gitlab.com/*",
-    "https://gitlab.org/*",
-    "https://*.gitlab.org/*"
+    "<all_urls>"
   ],
   "action": {
     "default_title": "SpanTree",
@@ -64,8 +61,5 @@
     "48": "icons/icon48.png",
     "64": "icons/icon64.png",
     "128": "icons/icon128.png"
-  },
-  "content_security_policy": {
-    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none';"
   }
 }
