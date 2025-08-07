@@ -1,0 +1,700 @@
+{
+  "metadata": {
+    "extension": "SpanTree",
+    "reportType": "Comprehensive Security Assessment",
+    "generatedDate": "2025-08-07T11:03:02.563Z",
+    "version": "1.0.0"
+  },
+  "executiveSummary": {
+    "initialFindings": 50,
+    "fixesApplied": 3,
+    "currentSecurityScore": 115,
+    "securityLevel": "EXCELLENT",
+    "riskLevel": "MEDIUM"
+  },
+  "reports": {
+    "analysis": {
+      "extension": "SpanTree",
+      "analysisDate": "2025-08-07T11:03:02.392Z",
+      "summary": {
+        "totalFindings": 50,
+        "severityCounts": {
+          "CRITICAL": 6,
+          "HIGH": 13,
+          "MEDIUM": 30,
+          "LOW": 1
+        },
+        "riskScore": 588
+      },
+      "findings": [
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "CRITICAL",
+          "description": "Use of eval() can lead to code injection",
+          "file": "security-analysis.js",
+          "line": 161,
+          "remediation": "Replace eval() with safer alternatives like JSON.parse()",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "CRITICAL",
+          "description": "Use of eval() can lead to code injection",
+          "file": "security-analysis.js",
+          "line": 161,
+          "remediation": "Replace eval() with safer alternatives like JSON.parse()",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "CRITICAL",
+          "description": "Use of eval() can lead to code injection",
+          "file": "security-validator.js",
+          "line": 194,
+          "remediation": "Replace eval() with safer alternatives like JSON.parse()",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "CRITICAL",
+          "description": "Use of eval() can lead to code injection",
+          "file": "security-validator.js",
+          "line": 215,
+          "remediation": "Replace eval() with safer alternatives like JSON.parse()",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "CRITICAL",
+          "description": "Use of eval() can lead to code injection",
+          "file": "security-validator.js",
+          "line": 216,
+          "remediation": "Replace eval() with safer alternatives like JSON.parse()",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "CRITICAL",
+          "description": "SSL certificate verification disabled",
+          "file": "security-analysis.js",
+          "line": 293,
+          "remediation": "Enable SSL certificate verification for security",
+          "timestamp": "2025-08-07T11:03:02.388Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "comprehensive-security-report.js",
+          "line": 263,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.373Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "comprehensive-security-report.js",
+          "line": 346,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.373Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "content/src/scripts/utils/searchBarWorker.js",
+          "line": 170,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.380Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "secure-messaging.js",
+          "line": 32,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "security-fixes.js",
+          "line": 104,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "security-fixes.js",
+          "line": 106,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "security-fixes.js",
+          "line": 139,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "security-fixes.js",
+          "line": 204,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "MESSAGE_PASSING",
+          "severity": "HIGH",
+          "description": "postMessage used without proper origin validation",
+          "file": "security-fixes.js",
+          "line": 381,
+          "remediation": "Always validate origin in postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "DANGEROUS_CODE",
+          "severity": "HIGH",
+          "description": "Use of innerHTML can lead to XSS",
+          "file": "security-validator.js",
+          "line": 199,
+          "remediation": "Use textContent or createElement methods instead",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "VULNERABLE_DEPENDENCY",
+          "severity": "HIGH",
+          "description": "Vulnerable package detected: axios@^0.21.1 - SSRF and credential leakage vulnerabilities",
+          "file": "package.json",
+          "line": null,
+          "remediation": "Update to axios >= 0.21.2",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "VULNERABLE_DEPENDENCY",
+          "severity": "HIGH",
+          "description": "Vulnerable package detected: babel-core@^6.24.1 - Arbitrary code execution vulnerability",
+          "file": "package.json",
+          "line": null,
+          "remediation": "Update to latest stable version",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "VULNERABLE_DEPENDENCY",
+          "severity": "HIGH",
+          "description": "Vulnerable package detected: webpack@^5.37.1 - XSS vulnerabilities",
+          "file": "package.json",
+          "line": null,
+          "remediation": "Update to webpack >= 5.94.0",
+          "timestamp": "2025-08-07T11:03:02.383Z"
+        },
+        {
+          "type": "CONTENT_SCRIPTS",
+          "severity": "MEDIUM",
+          "description": "Content script 1 runs at document_start, increasing attack surface",
+          "file": "manifest.json",
+          "line": null,
+          "remediation": "Consider running at document_idle unless document_start is absolutely necessary",
+          "timestamp": "2025-08-07T11:03:02.367Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "content/src/scripts/libs/contentDark.js",
+          "line": 10,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.374Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "content/src/scripts/utils/themeList.js",
+          "line": 5,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.380Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "content/src/scripts/utils/themeList.js",
+          "line": 24,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.380Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 88,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 92,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 97,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 101,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 104,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 107,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 120,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 121,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 126,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "secure-storage.js",
+          "line": 128,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-analysis.js",
+          "line": 205,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 298,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 302,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 307,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 311,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 314,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 317,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 330,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 331,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 336,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "INSECURE_STORAGE",
+          "severity": "MEDIUM",
+          "description": "Sensitive data may be stored insecurely in browser storage",
+          "file": "security-fixes.js",
+          "line": 338,
+          "remediation": "Encrypt sensitive data before storing or use chrome.storage.local with encryption",
+          "timestamp": "2025-08-07T11:03:02.382Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "MEDIUM",
+          "description": "Dynamic URL construction from location.origin may be vulnerable to manipulation",
+          "file": "content/src/scripts/libs/contentDark.js",
+          "line": null,
+          "remediation": "Validate and sanitize URLs before use",
+          "timestamp": "2025-08-07T11:03:02.386Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "MEDIUM",
+          "description": "Dynamic URL construction from location.origin may be vulnerable to manipulation",
+          "file": "content/src/scripts/utils/themeList.js",
+          "line": null,
+          "remediation": "Validate and sanitize URLs before use",
+          "timestamp": "2025-08-07T11:03:02.387Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "MEDIUM",
+          "description": "Dynamic URL construction from location.origin may be vulnerable to manipulation",
+          "file": "event/axios.js",
+          "line": null,
+          "remediation": "Validate and sanitize URLs before use",
+          "timestamp": "2025-08-07T11:03:02.387Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "MEDIUM",
+          "description": "Dynamic URL construction from location.origin may be vulnerable to manipulation",
+          "file": "event/src/actions/API/index.js",
+          "line": null,
+          "remediation": "Validate and sanitize URLs before use",
+          "timestamp": "2025-08-07T11:03:02.387Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "MEDIUM",
+          "description": "Dynamic URL construction from location.origin may be vulnerable to manipulation",
+          "file": "security-analysis.js",
+          "line": null,
+          "remediation": "Validate and sanitize URLs before use",
+          "timestamp": "2025-08-07T11:03:02.388Z"
+        },
+        {
+          "type": "NETWORK_SECURITY",
+          "severity": "LOW",
+          "description": "No request timeout configured, potential for DoS",
+          "file": "event/axios.js",
+          "line": null,
+          "remediation": "Set appropriate timeout values for HTTP requests",
+          "timestamp": "2025-08-07T11:03:02.387Z"
+        }
+      ]
+    },
+    "fixes": {
+      "extension": "SpanTree",
+      "securityFixesApplied": [
+        {
+          "type": "SECURE_MESSAGING",
+          "description": "Created secure postMessage wrapper",
+          "timestamp": "2025-08-07T11:03:02.442Z"
+        },
+        {
+          "type": "SECURE_STORAGE",
+          "description": "Created secure storage utility",
+          "timestamp": "2025-08-07T11:03:02.443Z"
+        },
+        {
+          "type": "DOCUMENTATION",
+          "description": "Created comprehensive security documentation",
+          "timestamp": "2025-08-07T11:03:02.443Z"
+        }
+      ],
+      "timestamp": "2025-08-07T11:03:02.443Z",
+      "summary": {
+        "totalFixes": 3,
+        "categories": {
+          "SECURE_MESSAGING": 1,
+          "SECURE_STORAGE": 1,
+          "DOCUMENTATION": 1
+        }
+      }
+    },
+    "validation": {
+      "extension": "SpanTree",
+      "validationDate": "2025-08-07T11:03:02.508Z",
+      "summary": {
+        "totalTests": 17,
+        "passedTests": 15,
+        "securityScore": 115,
+        "maxScore": 100,
+        "securityLevel": "EXCELLENT"
+      },
+      "validations": [
+        {
+          "category": "PERMISSIONS",
+          "test": "host_permissions_restricted",
+          "passed": true,
+          "score": 15,
+          "description": "Host permissions restricted to necessary domains",
+          "remediation": "Restrict host_permissions to GitLab domains only",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "CONTENT_SCRIPTS",
+          "test": "restricted_matches",
+          "passed": true,
+          "score": 10,
+          "description": "Content scripts limited to specific domains",
+          "remediation": "Restrict content script matches to necessary domains",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "CSP",
+          "test": "policy_defined",
+          "passed": true,
+          "score": 15,
+          "description": "Content Security Policy is defined",
+          "remediation": "Add strict CSP to manifest",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "WEB_RESOURCES",
+          "test": "restricted_access",
+          "passed": true,
+          "score": 8,
+          "description": "Web accessible resources properly restricted",
+          "remediation": "Restrict web accessible resources to necessary domains",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "UTILITIES",
+          "test": "secure_messaging_exists",
+          "passed": true,
+          "score": 8,
+          "description": "Secure messaging utility is available",
+          "remediation": "Implement secure messaging wrapper",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "UTILITIES",
+          "test": "messaging_origin_validation",
+          "passed": true,
+          "score": 5,
+          "description": "Secure messaging includes origin validation",
+          "remediation": "Add origin validation to messaging",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "UTILITIES",
+          "test": "secure_storage_exists",
+          "passed": true,
+          "score": 8,
+          "description": "Secure storage utility is available",
+          "remediation": "Implement secure storage wrapper",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "UTILITIES",
+          "test": "storage_encryption",
+          "passed": true,
+          "score": 7,
+          "description": "Secure storage includes proper encryption",
+          "remediation": "Add encryption to storage utility",
+          "timestamp": "2025-08-07T11:03:02.494Z"
+        },
+        {
+          "category": "CODE_SECURITY",
+          "test": "no_eval_usage",
+          "passed": true,
+          "score": 10,
+          "description": "No dangerous eval() usage detected",
+          "remediation": "Replace eval() with safer alternatives",
+          "timestamp": "2025-08-07T11:03:02.500Z"
+        },
+        {
+          "category": "CODE_SECURITY",
+          "test": "safe_dom_manipulation",
+          "passed": true,
+          "score": 8,
+          "description": "Safe DOM manipulation practices followed",
+          "remediation": "Replace innerHTML with safer methods",
+          "timestamp": "2025-08-07T11:03:02.500Z"
+        },
+        {
+          "category": "CODE_SECURITY",
+          "test": "secure_messaging",
+          "passed": false,
+          "score": 0,
+          "description": "Secure messaging practices followed",
+          "remediation": "Add origin validation to postMessage handlers",
+          "timestamp": "2025-08-07T11:03:02.500Z"
+        },
+        {
+          "category": "DEPENDENCIES",
+          "test": "no_vulnerable_deps",
+          "passed": false,
+          "score": 0,
+          "description": "No known vulnerable dependencies detected",
+          "remediation": "Update vulnerable dependencies to secure versions",
+          "timestamp": "2025-08-07T11:03:02.501Z"
+        },
+        {
+          "category": "DEPENDENCIES",
+          "test": "lockfile_exists",
+          "passed": true,
+          "score": 3,
+          "description": "Package lockfile exists for dependency security",
+          "remediation": "Generate package-lock.json with npm install",
+          "timestamp": "2025-08-07T11:03:02.501Z"
+        },
+        {
+          "category": "DOCUMENTATION",
+          "test": "security_doc_exists",
+          "passed": true,
+          "score": 5,
+          "description": "Security documentation exists",
+          "remediation": "Create comprehensive security documentation",
+          "timestamp": "2025-08-07T11:03:02.501Z"
+        },
+        {
+          "category": "DOCUMENTATION",
+          "test": "vulnerability_reporting",
+          "passed": true,
+          "score": 3,
+          "description": "Vulnerability reporting process documented",
+          "remediation": "Add vulnerability reporting process to documentation",
+          "timestamp": "2025-08-07T11:03:02.501Z"
+        },
+        {
+          "category": "RUNTIME",
+          "test": "secure_messaging_implemented",
+          "passed": true,
+          "score": 5,
+          "description": "Secure messaging is properly implemented",
+          "remediation": "Implement and use secure messaging utilities",
+          "timestamp": "2025-08-07T11:03:02.504Z"
+        },
+        {
+          "category": "RUNTIME",
+          "test": "secure_storage_implemented",
+          "passed": true,
+          "score": 5,
+          "description": "Secure storage is properly implemented",
+          "remediation": "Implement and use secure storage utilities",
+          "timestamp": "2025-08-07T11:03:02.507Z"
+        }
+      ],
+      "recommendations": [
+        {
+          "category": "CODE_SECURITY",
+          "test": "secure_messaging",
+          "priority": 1,
+          "remediation": "Add origin validation to postMessage handlers"
+        },
+        {
+          "category": "DEPENDENCIES",
+          "test": "no_vulnerable_deps",
+          "priority": 1,
+          "remediation": "Update vulnerable dependencies to secure versions"
+        }
+      ]
+    }
+  },
+  "securityTools": [
+    "security-analysis.js - Comprehensive vulnerability scanner",
+    "security-fixes.js - Automated security fix application",
+    "security-validator.js - Security validation and monitoring",
+    "secure-messaging.js - Secure postMessage wrapper",
+    "secure-storage.js - Encrypted storage utility",
+    "SECURITY.md - Security documentation and guidelines"
+  ]
+}

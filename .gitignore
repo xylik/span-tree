@@ -2,3 +2,15 @@ node_modules
 build
 .idea
 *.DS_Store*
+
+# Security analysis artifacts - keep the tools but not sensitive reports
+# Keep these files for ongoing security monitoring:
+# security-*.js files are the tools
+# SECURITY*.md files are documentation
+# secure-*.js files are utilities
+
+# Optional: comment out these lines if you want to commit the reports
+# security-report.json
+# security-validation-report.json  
+# COMPREHENSIVE-SECURITY-REPORT.json
+# security-fixes-applied.json
